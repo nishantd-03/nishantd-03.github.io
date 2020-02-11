@@ -7,13 +7,13 @@
 this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
 this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
 this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
-this.go=function(){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)};
-this.start=function(){var t=this;t.go()};};
-try{(new g(100,"r","QSI_S_ZN_0BtlngdGfwJwBb7","https://zn0btlngdgfwjwbb7-siuitest481.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0BtlngdGfwJwBb7")).go()}catch(i){}})();
+this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+this.start=function(){this.go()};};
+try{(new g(100,"r","QSI_S_ZN_0BtlngdGfwJwBb7","https://zn0btlngdgfwjwbb7-siuitest481.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_0BtlngdGfwJwBb7")).start()}catch(i){}})();
 </script><div id='ZN_0BtlngdGfwJwBb7'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
 <!--END WEBSITE FEEDBACK SNIPPET-->
 </head>
 <body>
-This is a sample test for the website related things!!!! Remove go
+This is a sample test for the website related things!!!!
 </body>
 </html>
